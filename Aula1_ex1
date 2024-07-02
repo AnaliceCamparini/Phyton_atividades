@@ -1,0 +1,11 @@
+n1=0.0
+salF=0.0
+desc=0.0
+
+sal=float(input("Informe o seu salário: "))
+
+desc= sal*(10/100)
+
+salF=sal+50-desc
+
+print(f"Seu salário final é de: R${salF}")
