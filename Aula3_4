@@ -1,0 +1,25 @@
+#Construir um algoritmo que leia a idade de N pessoas.
+#O sistema deve calcular: a média das idades, a menor e a maior idade informada
+
+n=0
+idade=0
+maior=0
+menor=0
+
+n=int(input("Quantas pessoas você quer digitar: "))
+
+for contador in range (0,n,1):
+    idade=int(input("Qual idade: "))
+
+    if(contador==1):
+        maior=contador
+        menor=contador
+    else:
+        if(idade>maior):
+            maior=idade
+        else:
+            if(idade<menor):
+                menor=idade
+
+print(f"O maior numero é: {maior}")
+print(f"O menor numero é: {menor}")
