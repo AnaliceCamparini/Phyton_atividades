@@ -1,0 +1,17 @@
+tempo=0
+kilo=0.0
+vM=0.0
+dist=0
+qL=0
+
+tempo=int(input("Quanto tempo foi gasto: "))
+kilo=float(input("Quantos km/L são necessario para percorrer: "))
+vM=float(input("Qual é a velocidade média: "))
+
+dist=tempo*vM
+qL=dist/kilo
+
+print(f"A velocidade média é:{vM}")
+print(f"O tempo gasto é de:{tempo}")
+print(f"A distancia foi de:{dist}")
+print(f"A quantidade de litros foi de:{qL}litros")
