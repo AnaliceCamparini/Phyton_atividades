@@ -1,0 +1,14 @@
+#faça um algoritmo que solicite ao usuário números e os armazene em um vetor de 6 posições. O usuário deverá inserir valores positivos e negativos. 
+#Substitua todas as ocorrência de valores positivos por 1 e todos os valores negativos por 0.
+
+vet=[0]*6
+
+for cont in range(6):
+    vet[cont]=int(input("Digite um numero: "))
+
+    if(vet[cont]<0):
+        vet[cont]=1
+        print(f"{vet[cont]}")
+    else:
+        vet[cont]=0
+        print(f"{vet[cont]}")
