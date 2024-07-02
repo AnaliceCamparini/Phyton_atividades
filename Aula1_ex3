@@ -1,0 +1,20 @@
+pFab=0.0
+pLu=0.0
+pIm=0.0
+lucro=0.0
+vImp=0.0
+pFinal=0.0
+
+pFab=float(input("Qual é o valor do veiculo: "))
+pLu=float(input("Qual é o percentual de lucro que este veiculo possui no mercado: "))
+pIm=float(input("Qual é percentual de imposto: "))
+
+lucro=pFab*(pLu/100)
+
+vImp=pFab*(pIm/100)
+
+pFinal=pFab+lucro+vImp
+
+print(f"O valor do lucro é de:R${lucro:,.2f}")
+print(f"O valor do imposto é de:R${vImp:,.2f}")
+print(f"O valor do preço final deste carro é:R${pFinal:,.2f}")
