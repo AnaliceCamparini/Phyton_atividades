@@ -1,0 +1,28 @@
+#Construa um algoritmo que determine quanto será gasto para encher o
+#tanque de um carro. O usuário fornecerá os seguintes dados: Tipo de
+#carro (TC) (G – gasolina ou A – álcool) e Capacidade do tanque (CT),
+#em litros. Após a escolha do tipo de veículo e da capacidade do tanque,
+#o sistema irá imprimir uma mensagem falando o tipo do carro(
+#Gasolina ou álcool) e pedirá para o usuário informar o
+#valor do preço do litro do combustível.
+#Como saída, será informado para o usuário, o valor,
+#em reais, do preço de se encher tanque de combustível.
+
+TC=""
+capa=0.0
+valor=0.0
+valoF=0.0
+
+TC=input("Digite o tipo de combustível que seu carro possui(A-alcool|G-Gasolina): ")
+capa=float(input("Qual é a capacidade que seu carro possui de tanque: "))
+
+if(TC=="G"):
+    print(f"Seu carro é tipo GASOLINA")
+    valor=float(input("Qual é o valor da gasolina: "))
+    valoF=valor*capa
+else:
+    print(f"Seu carro é tipo ALCOOL")
+    valor=float(input("Qual é o valor do alcool: "))
+    valoF=valor*capa
+
+print(f"O valor que você pagará é de: {valoF:,.2f}")
