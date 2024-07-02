@@ -1,0 +1,36 @@
+#Escrever um algoritmo que leia os dados de N pessoas
+#(nome, sexo(M/F), idade e saúde(B/R)) e informe
+#se está apta ou não para cumprir o serviço militar obrigatório.
+#Informe os totais de aptos e não aptos no final do algoritmo.
+#Se o candidato estiver apto deve ser mostrado o seu nome e a mensagem que está apto.
+#Para estar apto o candidato deve possuir 18 anos,
+#ser do sexo masculino e estar com a saúde boa.
+#Caso o candidato não possa servir deve ser mostrado o seu nome e o motivo.
+#O sistema deve ficar solitando dados até que seja digitado N.
+
+nome=""
+sexo=""
+idade=0
+saude=""
+cont=""
+
+cont=input("Deseja começar: ")
+
+while(cont.upper()=="S"):
+    nome=input("Digite seu nome: ")
+    sexo=input("Digite seu sexo (F-feminino|M-masculino): ")
+    idade=int(input("Digite sua idade: "))
+    saude=input("Digite se sua saude é boa(B) ou ruim(R): ")
+
+    if(sexo.upper()=="M"):
+        if(idade>=18):
+            if(saude.upper()=="B"):
+                 print(f"{nome},você está apto para realizar o alistamento!")
+            else:
+                 print(f"{nome},você não está adepto pois esta com saude ruim!")
+        else:
+            print(f"{nome}, você não esta adepto pois não é de maior!")
+    else:
+        print(f"{nome},você não esta adepto pois é uma mulher!")
+    
+    cont=input("Deseja continuar: ")
