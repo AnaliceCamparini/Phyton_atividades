@@ -1,0 +1,28 @@
+#Faça um programa que receba o salário de um funcionário,
+#calcule e mostre o novo salário desse funcionário,
+#acrescido de bonificação e de auxílio escola.
+#Salário                               Bonificação
+#Até R$ 500,00                         5%
+#Entre R$ 500,00 e R$ 1200,00          12%
+#Acima de R$ 1200,00                   0%
+
+#Salário                        Auxílio Escola
+#Até R$ 600,00                  R$150,00
+#Mais que 600,00                R$ 100,00
+
+sal=0.0
+salF=0.0
+
+sal=float(input("Digite o seu salário: "))
+
+if(sal<=500):
+    salF=sal+(sal*(5/100))
+    print(f"Você tem um salario final de:R${salF},com acrescimo de 5%")
+else:
+    if(sal>500)and(sal<=1200):
+        salF=sal+(sal*(12/100))+150
+        print(f"Você tem um salario final de:R${salF},com acrescimo de 12% e 150 de auxilio escola")
+    else:
+        if(sal>1200):
+            salF=sal+100
+            print(f"Você tem um salario final de:R${salF},com acrescimo de 0% e 100 de auxilio escola")
