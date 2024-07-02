@@ -1,0 +1,24 @@
+#Faça um algoritmo que leia uma matriz 2 x 3 real
+#e depois imprima a matriz original e depois gere e
+#imprima sua matriz transposta (matriz 3 x 2 equivalente)
+
+mat_trans=[[0]*2,[0]*2,[0]*2]
+mat=[[0]*3,[0]*3]
+
+for linha in range(2):
+    for coluna in range(3):
+        mat[linha][coluna]=int(input(f"Numero {linha},{coluna}:"))
+
+for linha in range(2):
+    for coluna in range(3):
+        print(f"[{mat[linha][coluna]}]",end=' ')
+    print()
+
+for linha in range(2):
+    for coluna in range(3):
+        mat_trans[linha][coluna]=mat[coluna][linha]
+
+for linha in range(3):
+    for coluna in range(2):
+         print(f"[{mat_trans[linha][coluna]}]",end=' ')
+    print()
