@@ -1,0 +1,39 @@
+#A prefeitura de uma cidade fez uma pesquisa
+#entre seus habitantes, coletando dados sobre o
+#salário e número de filhos. 		
+#Elabore um algoritmo para apresentar:
+ #a)Média do salário da população;
+ #b)Média do número de filhos;
+ #c)Maior salário;
+ #d)Percentual de pessoas com salário até R$ 100,00.
+#O sistema deve ficar solicitando novos dados
+#até o usuário mandar parar.
+
+sal=0.0
+filho=0
+mediaS=0.0
+mediaF=0
+somaS=0.0
+somaF=0
+conF=0
+conS=0
+maior=0
+cont="S"
+
+while(cont.upper()!="N"):
+    sal=float(input("Digite o seu salario: "))
+    somaS=somaS+sal
+    conS+=1
+    filho=int(input("Digite a sua quantidade de filhos:"))
+    somaF=somaF+filho
+    conF+=1
+
+    mediaS=somaS/conS
+    mediaF=somaF/conF
+
+    if(sal>maior):
+        maior=sal
+    cont=input("Deseja continuar(S-sim|N-nao): ")
+print(f"A média de salario foi de: {mediaS:,.2f}")
+print(f"A media de filhos foi de:{mediaF:,.2f}")
+print(f"O maior salario foi:{maior:,.2f}")
