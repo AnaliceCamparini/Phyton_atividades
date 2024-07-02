@@ -1,0 +1,14 @@
+pe=0
+pol=0
+jarda=0
+mi=0
+
+pe=int(input("Digite a medida em pés: "))
+
+pol=pe*12
+jarda=pe*3
+mi=1760*jarda
+
+print(f"A medida em polegadas é:{pol}")
+print(f"A medida em jardas é:{jarda}")
+print(f"A medida em milhas é:{mi}")
