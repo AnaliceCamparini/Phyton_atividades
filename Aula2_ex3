@@ -1,0 +1,22 @@
+#Você está fazendo um trabalho de classificação de solo. Após colher uma
+#amostra e verificar a quantidade de pontos de água presente nela, classificou
+#a amostra em:
+    #Rochosa: se menos ou igual a 10 pontos de água
+    #Firme: se mais do 10 e menos ou igual a 40 pontos
+    #Pantanosa: se mais do 40 e menos ou igual a 80 pontos
+    #Quantidade Inválida: se mais do que 80 pontos
+
+cla=0
+
+cla=int(input("Digite a classificação do solo: "))
+
+if(cla<=10):
+    print(f"O solo é ROCHOSO pois seu valor é de:{cla}")
+else:
+    if(cla>10) and (cla<=40):
+        print(f"O solo é FIRME pois seu valor é de:{cla}")
+    else:
+        if(cla>40) and (cla<=80):
+            print(f"O solo é PANTANOSO pois seu valor é de:{cla}")
+        else:
+            print(f"QUANTIDADE INVALIDA pois seu valor é de:{cla}")
