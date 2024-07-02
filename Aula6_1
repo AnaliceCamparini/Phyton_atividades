@@ -1,0 +1,4 @@
+def mostrar():
+    print("Oi!")
+
+mostrar()
