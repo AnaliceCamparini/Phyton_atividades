@@ -1,0 +1,24 @@
+#Faça um algoritmo, com uma função que necessite de três argumentos (parâmetros), 
+#e que retorme:
+#- a soma desses três parâmetros
+#- o produto dos 3 parâmetros 
+
+#A função deverá retornar 2 valores para duas variáveis simultaneamente
+
+def resultados(a,b,c):
+    resul=a+b+c
+    resul2=a*b*c
+    return resul,resul2
+
+n1=0
+n2=0
+n3=0
+
+n1=int(input(f"Digite um numero: "))
+n2=int(input(f"Digite um numero: "))
+n3=int(input(f"Digite um numero: "))
+
+soma,mult=resultados(n1,n2,n3)
+
+print(soma)
+print(mult)
